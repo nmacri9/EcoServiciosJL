@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecoservicios JL | Soluciones Ambientales</title>
+    <title>Ecoservicios JL </title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo-pestaña.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +16,7 @@
             </a>
         </div>
         <nav>
-            <a href=" #contacto">Contacto</a>
+            <a href=" #contacto"> Contacto </a>
         </nav>
     </header>
 
@@ -27,8 +28,8 @@
         </section>
 
         <section id="quienes-somos" class="seccion-texto">
-            <h2>¿Quiénes Somos?</h2>
-            <p>Servicios integrales AL-FA es una empresa ubicada en la ciudad de Quilmes, conformada por técnicos y profesionales  de diferentes áreas con más de 10 años de experiencia en temas asociados a la evaluación y monitoreo de la contaminación ambiental, con el fin de brindar los servicios relacionados al medio ambiente, aguas, suelos, aire destacando como principal objetivo las tareas de muestreos en campo, un factor dinámico que debe llevarse a cabo con efectividad según las normas legales vigentes.</p>
+            <h1>¿Quiénes Somos?</h1>
+            <p>Somos una empresa ubicada en la ciudad de Quilmes, conformada por técnicos y profesionales  de diferentes áreas con más de 10 años de experiencia en temas asociados a la evaluación y monitoreo de la contaminación ambiental, con el fin de brindar los servicios relacionados al medio ambiente, aguas, suelos, aire destacando como principal objetivo las tareas de muestreos en campo, un factor dinámico que debe llevarse a cabo con efectividad según las normas legales vigentes.</p>
  <p>Nuestro personal se encuentra habilitado e inscriptos en: RENATOM. (Registro Nacional de Tomadores de Muestra)   
  RUPAYAR Registro Único de Profesionales Ambientales y Administrador de Relaciones de la Provincia de Buenos Aires</p> 
 <p> MAPBA Ministerio de Ambiente de la Provincia de Buenos Aires; Ministerio de Desarrollo Agrario de la Provincia de Buenos Aires; APRA Agencia de Protección Ambiental GCBA. 
@@ -36,12 +37,12 @@ Group 4871, Objeto agrupado  Poseemos equipamiento propio calibrados y certifica
         </section>
 
         <section class="seccion-accesos">
-            <h2>Nuestros Servicios Principales</h2>
+            <h2> Servicios </h2>
             <div class="contenedor-accesos">
                 <div class="card-acceso plagas" onclick="mostrarListado('Control de Plagas')">
                     <h3>Control de Plagas</h3>
                     <p>Fumigación, Desratización y Desinfección </p>
-                    <span class="btn-ver-mas">Ver Servicios ➜</span>
+                    <span class="btn-ver-mas"> Ver Servicios ➜</span>
                 </div>
 
                 <div class="card-acceso seguridad" onclick="mostrarListado('Seguridad e Higiene')">
@@ -58,21 +59,31 @@ Group 4871, Objeto agrupado  Poseemos equipamiento propio calibrados y certifica
                 <div class="item-info">
                     <h3> Tareas de Campo</h3>
                     <p>Relevamiento in-situ y diagnóstico inicial de riesgos.</p>
+                    <button class="btn-leer-mas" onclick="abrirModal('campo')">Ver más. ➜</button>
                 </div>
                 <div class="item-info">
-                    <h3> Gestión de obras</h3>
+                    <h3> Gestión y ejecución de obras</h3>
                     <p>Seguimiento normativo en construcciones y plantas industriales.</p>
+                    <button class="btn-leer-mas" onclick="abrirModal('obras')">Ver más. ➜</button>
                 </div>
                 <div class="item-info">
                     <h3> Instrumental de Muestreo</h3>
                     <p>Mediciones precisas con equipos certificados y calibrados.</p>
+                    <button class="btn-leer-mas" onclick="abrirModal('muestreo')">Ver más. ➜</button>
                 </div>
             </div>
         </section>
+            <div id="modal-info" class="modal-overlay hidden">
+                <div class="modal-content">
+                    <span class="btn-cerrar" onclick="cerrarModal()">✖</span>
+                    <h3 id="modal-titulo">Título</h3>
+                    <div id="modal-cuerpo" class="modal-texto">
+                    </div>
+            </div>
+        </div>
 
     </div> <div id="vista-servicios" class="hidden">
         <div class="barra-navegacion">
-            <button onclick="volverInicio()" class="btn-volver">⬅ Volver al Inicio</button>
             <h2 id="titulo-categoria-seleccionada">Listado</h2>
         </div>
         
@@ -80,7 +91,7 @@ Group 4871, Objeto agrupado  Poseemos equipamiento propio calibrados y certifica
     </div>
 
     <footer id="contacto">
-        <p>&copy; 2026 Ecoservicios JL - Contacto: info@ecoserviciosjl.com</p>
+        <p>&copy; 2026 EcoserviciosJL - Mail: "cotizaciones@ecoserviciosjl.com.ar"</p>
     </footer>
 
     <script src="js/main.js"></script>

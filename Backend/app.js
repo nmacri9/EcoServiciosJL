@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 app.use(express.json());
 app.use(cors());
-
+app.use(express.static('public'));
 // 1. CONFIGURACIÓN DE LA BASE DE DATOS
 const db = mysql.createConnection({
     host: 'localhost',
