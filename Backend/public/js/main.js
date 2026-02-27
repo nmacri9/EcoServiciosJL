@@ -8,7 +8,7 @@ let serviciosGlobal = [];
 // 1. Cargar datos en memoria al inicio (sin mostrar nada aún)
 async function iniciar() {
     try {
-        const res = await fetch("http://localhost:3300/servicios");
+        const res = await fetch("/servicios");
         const data = await res.json();
         serviciosGlobal = data.payload;
         console.log("Servicios listos:", serviciosGlobal);
