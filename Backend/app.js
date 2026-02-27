@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.static('public'));
 // 1. CONFIGURACIÓN DE LA BASE DE DATOS
 const db = new Pool({
-  connectionString: 'postgresql://postgres:nicomacri925@db.njettbvmyyqucdondnwy.supabase.co:5432/postgres',
+  connectionString: 'DATABASE_URL=postgresql://postgres.njettbvmyyqucdondnwy:nicomacri925@aws-1-us-east-2.pooler.supabase.com:6543/postgres',
   ssl: {
     rejectUnauthorized: false 
   }
