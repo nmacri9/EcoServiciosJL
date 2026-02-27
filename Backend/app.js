@@ -27,10 +27,10 @@ db.connect(err => {
 app.get('/servicios', (req, res) => {
     const sql = `
         SELECT id, nombre, descripcion, imagen, precio, 'Control de Plagas' as categoria 
-        FROM control de plagas
+        FROM control_de_plagas
         UNION
         SELECT id, nombre, descripcion, imagen, precio, 'Seguridad e Higiene' as categoria 
-        FROM seguridad e higiene y medioambiente
+        FROM seguridad_higiene_y_medioambiente
     `;
 
     db.query(sql, (err, results) => {
