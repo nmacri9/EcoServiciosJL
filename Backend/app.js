@@ -1,5 +1,5 @@
 const express = require('express');
-const mysql = require('mysql2');
+const { Pool } = require('pg');
 const cors = require('cors');
 
 const app = express();
@@ -7,12 +7,11 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static('public'));
 // 1. CONFIGURACIÓN DE LA BASE DE DATOS
-const db = mysql.createConnection({
-    host: 'c261.ferozo.com',
-    port: 3306,        
-    user: 'c2612223_ecojl',      
-    password: 'ZAlomu00ra',      
-    database: 'c2612223_ecojl' 
+const db = new Pool({
+  connectionString: 'postgresql://postgres:nicomacri925@db.njettbvmyyqucdondnwy.supabase.co:5432/postgres',
+  ssl: {
+    rejectUnauthorized: false 
+  }
 });
 
 db.connect(err => {
@@ -28,10 +27,10 @@ db.connect(err => {
 app.get('/servicios', (req, res) => {
     const sql = `
         SELECT id, nombre, descripcion, imagen, precio, 'Control de Plagas' as categoria 
-        FROM \`control de plagas\`
+        FROM control de plagas
         UNION
         SELECT id, nombre, descripcion, imagen, precio, 'Seguridad e Higiene' as categoria 
-        FROM \`seguridad e higiene y medioambiente\`
+        FROM seguridad e higiene y medioambiente
     `;
 
     db.query(sql, (err, results) => {
@@ -39,7 +38,7 @@ app.get('/servicios', (req, res) => {
             console.error(err);
             return res.status(500).json({ error: 'Error al consultar la base de datos' });
         }
-        res.json({ payload: results });
+        res.json({ payload: results.rows });
     });
 });
 
