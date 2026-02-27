@@ -8,11 +8,11 @@ app.use(cors());
 app.use(express.static('public'));
 // 1. CONFIGURACIÓN DE LA BASE DE DATOS
 const db = mysql.createConnection({
-    host: 'localhost',
-    port: 3307,        // <--- ¡ESTA ERA LA CLAVE! (Según tu phpMyAdmin)
-    user: 'root',      
-    password: '',      // En XAMPP suele ser vacío
-    database: 'ecoservicios' // El nombre que vi en tu phpMyAdmin
+    host: 'c261.ferozo.com',
+    port: 3307,        
+    user: 'c2612223_ecojl',      
+    password: 'ZAlomu00ra',      
+    database: 'c2612223_ecojl' 
 });
 
 db.connect(err => {
