@@ -9,7 +9,7 @@ app.use(express.static('public'));
 // 1. CONFIGURACIÓN DE LA BASE DE DATOS
 const db = mysql.createConnection({
     host: 'c261.ferozo.com',
-    port: 3307,        
+    port: 3306,        
     user: 'c2612223_ecojl',      
     password: 'ZAlomu00ra',      
     database: 'c2612223_ecojl' 
