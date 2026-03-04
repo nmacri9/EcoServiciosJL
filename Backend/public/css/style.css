@@ -39,6 +39,27 @@ header h1 {
     margin: 0;
 }
 
+.btn-contacto-header {
+
+    background-color: var(--secondary); /* Azul seguridad */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; /* Puntas un poco redondeadas */
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s dotted;
+    border: 2px solid var(--secondary);
+}
+
+.btn-contacto-header:hover {
+    background-color: transparent;
+    color: var(--secondary) !important;
+    transform: scale(1.05); 
+
+}
+
+
+
 /* --- ESTILOS NUEVOS PARA LA LANDING --- */
 
 /*  Quiénes Somos */
@@ -324,4 +345,13 @@ header h1 {
     text-align: center;
     padding: 20px;
     background-color: #f5f5f5; 
+}
+#contacto a {
+    color: var(--secondary); 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
 }
