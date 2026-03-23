@@ -41,10 +41,10 @@ header h1 {
 
 .btn-contacto-header {
 
-    background-color: var(--secondary); /* Azul seguridad */
+    background-color: var(--secondary); 
     color: white;
     padding: 10px 20px;
-    border-radius: 5px; /* Puntas un poco redondeadas */
+    border-radius: 5px; 
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s dotted;
@@ -60,7 +60,6 @@ header h1 {
 
 
 
-/* --- ESTILOS NUEVOS PARA LA LANDING --- */
 
 /*  Quiénes Somos */
 .seccion-texto {
@@ -121,7 +120,7 @@ header h1 {
     margin-bottom: 30px; 
 }
 
-/* Sección Info Técnica (3 columnas) */
+/* Sección Info Técnica */
 .info-tecnica {
     padding: 60px 20px;
     text-align: center;
@@ -354,4 +353,27 @@ header h1 {
 
 #contacto a:hover {
     text-decoration: underline;
+}
+
+/* Responsive tamaño celular*/
+@media (max-width: 480px){
+    header {
+        padding: 10%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .img-logo {
+        max-height: 50px;
+    }
+    .btn-contacto-header {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+
 }
