@@ -76,28 +76,7 @@ function renderizar(lista) {
 const infoMetodologia = {
 
     'obras': {
-        titulo: 'Gestión y ejecución de obras',
-        contenido: `
-            <ul>
-                <li>Estudio de caracterización de sitios Fase 1 y Fase 2.</li>
-                <li>Estudios hidrogeológicos de acuerdo con Res 227/23 APRA Y 94/14 MAPBA.</li>
-                <li>Monitoreo de suelo y agua subterránea.</li>
-                <li>Evaluaciones de riesgo a la salud humana para sitios potencialmente contaminados RBCA (Risk-Based Corrective Action).</li>
-                <li>Estudios de línea de base ambiental.</li>
-                <li>Caracterización de sitios y manejo de residuos.</li>
-                <li>Disposición final de residuos eventuales con manifiesto.</li>
-                <li>Calidad del agua.</li>
-                <li>Gestión APRA Agencia de Protección Ambiental GCBA; ACUMAR Cuenca Matanza Riachuelo; DGROC; DGIUR; Ministerio de Ambiente Provincia de Buenos Aires; ADA Autoridad Del Agua; INA Instituto Nacional del Agua.</li>
-                <li>Auditoría técnica 1102/2004 Secretaría de Energía de la Nación.</li>
-                <li>Cegado e inertizado de tanques de combustibles (Certificados).</li>
-                <li>Cambios de tanques en estaciones de servicios para ampliación de capacidad.</li>
-                <li>Erradicación de tanques SASH, SAAH.</li>
-                <li>Excepción de retiro de tanques SASH.</li>
-                <li>Construcción de pozos freáticos para monitoreo / Construcción de pozos de explotación.</li>
-                <li>Transporte y tratamiento de residuos industriales.</li>
-                <li>Gestión y emisión de certificados de tratamientos y/o disposición final de residuos.</li>
-            </ul>
-        `
+        
     },
     'muestreo': {
         titulo: 'Instrumental de Muestreo',

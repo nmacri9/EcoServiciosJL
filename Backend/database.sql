@@ -39,7 +39,7 @@ INSERT INTO `seguridad e higiene y medioambiente` (nombre, descripcion, imagen,)
 ('Auditoría de Higiene', 'Evaluación completa de las condiciones de higiene y seguridad. Informe detallado incluido.', 'seguridadehigiene.jpg',)
 ('Capacitación en Seguridad', 'Cursos certificados de manipulación de alimentos y prevención de riesgos laborales.', 'capacitacion.jpg', )
 
-INSERT INTO gestiones (nombre, descripcion, imagen, precio) VALUES (
+INSERT INTO `gestiones` (nombre, descripcion, imagen, precio) VALUES (
     'Gestión y ejecución de obras',
     '<ul>
         <li>Estudio de caracterización de sitios Fase 1 y Fase 2.</li>

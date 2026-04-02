@@ -31,6 +31,9 @@ app.get('/servicios', (req, res) => {
         UNION
         SELECT id, nombre, descripcion, imagen, precio, 'Seguridad e Higiene' as categoria 
         FROM seguridad_higiene_y_medioambiente
+        SELECT id, nombre, descripcion, imagen, precio, 'Seguridad e Higiene' as categoria 
+        FROM gestiones
+
     `;
 
     db.query(sql, (err, results) => {
