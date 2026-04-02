@@ -74,24 +74,7 @@ function renderizar(lista) {
 }
 // Abrimos la lista de cada metodologia de trabajo
 const infoMetodologia = {
-    'campo': {
-        titulo: 'Tareas de Campo',
-        contenido: `
-            <ul>
-                <li>Muestreo de efluentes líquidos. Medición de parámetros in-situ.</li>
-                <li>Sondeos de suelo. Toma de muestras, preservación y traslado al laboratorio.</li>
-                <li>Muestreos en estaciones de expendio de combustible.</li>
-                <li>Muestreo de agua subterránea y nivelación óptica de boca de pozos.</li>
-                <li>Medición de nivel estático y dinámico.</li>
-                <li>Limpieza, purga y desarrollo de pozos de monitoreo.</li>
-                <li>Toma de muestras en aire ambiental exterior.</li>
-                <li>Toma de muestras en aire en ambiente laboral.</li>
-                <li>Mediciones de ruidos molestos al vecindario. Norma IRAM 4062.</li>
-                <li>Mediciones en Seguridad e Higiene en el Trabajo, de acuerdo a la normativa del Ministerio de Trabajo de la Nación.</li>
-                <li>Gestión, representación técnica en Seguridad e Higiene en el Trabajo.</li>
-            </ul>
-        `
-    },
+
     'obras': {
         titulo: 'Gestión y ejecución de obras',
         contenido: `
