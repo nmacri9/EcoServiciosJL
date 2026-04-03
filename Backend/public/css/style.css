@@ -113,8 +113,8 @@ header h1 {
 }
 
 .card-acceso.plagas { border-top-color: #1565c0; }
-.card-acceso.seguridad { border-top-color: #2E7D32; } 
-.card-acceso.gestiones {border-top-color: #F5F5F5;}
+.card-acceso.seguridad { border-top-color: #1565c0; } 
+.card-acceso.gestiones {border-top-color: #1565c0;}
 
 
 .card-acceso h3 { font-size: 1.8rem; margin-bottom: 15px; }

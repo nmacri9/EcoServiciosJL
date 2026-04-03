@@ -31,7 +31,7 @@ app.get('/servicios', (req, res) => {
         UNION
         SELECT id, nombre, descripcion, imagen, precio, 'Seguridad e Higiene' as categoria 
         FROM seguridad_higiene_y_medioambiente
-        SELECT id, nombre, descripcion, imagen, precio, 'Seguridad e Higiene' as categoria 
+        SELECT id, nombre, descripcion, imagen, precio, 'Gestión y Trámites' as categoria 
         FROM gestiones
 
     `;
