@@ -45,6 +45,24 @@ app.get('/servicios', (req, res) => {
     });
 });
 
+app.get('/api/wake-up', (req, res) => {
+    // Pidoun ID de cualquiera de las tablas para generar actividad real
+    const sql = `SELECT id FROM control_de_plagas LIMIT 1;`;
+
+    db.query(sql, (err, results) => {
+        if (err) {
+            console.error('Error en el ping de reactivación:', err.message);
+            return res.status(500).json({ error: 'Error al conectar con Supabase' });
+        }
+        
+        // Respuesta microscópica para cron-job.org
+        res.json({ status: "alive", message: "EcoServicios y Supabase despiertos" });
+    });
+});
+
+
+
+
 const PORT = 3300;
 app.listen(PORT, () => {
     console.log(`🚀 Servidor listo en http://localhost:${PORT}`);
